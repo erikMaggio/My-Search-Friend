@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "108240263524",
+    "project_id": "search-friend-1400b",
+    "storage_bucket": "search-friend-1400b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108240263524:android:99f06536b2b6cf3b320271",
+        "android_client_info": {
+          "package_name": "com.example.mysearchfriend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "108240263524-3rmhv1h6ok17o10qgkojsrjln172gq23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mysearchfriend",
+            "certificate_hash": "7ae2e62ae9f1aa9df208c7e7d22993f431e88e03"
+          }
+        },
+        {
+          "client_id": "108240263524-jlhr15fdi0l6a0opv06fo8bm54ikh9gk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0WvWpMTMwKQlGIzfreiZBhGwORZubrHM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "108240263524-jlhr15fdi0l6a0opv06fo8bm54ikh9gk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
