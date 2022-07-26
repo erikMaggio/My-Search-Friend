@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/splash_drawable.xml" value="0.1505" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_login_fire_store.xml" value="0.14" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/app_bar_drawer.xml" value="0.1" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/content_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/nav_header_drawer.xml" value="0.1" />
       </map>
     </option>
   </component>
