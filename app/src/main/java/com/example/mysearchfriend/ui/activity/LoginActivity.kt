@@ -1,9 +1,8 @@
-package com.example.mysearchfriend
+package com.example.mysearchfriend.ui.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import com.example.mysearchfriend.databinding.ActivityLoginBinding
 import com.google.android.gms.auth.api.signin.GoogleSignIn

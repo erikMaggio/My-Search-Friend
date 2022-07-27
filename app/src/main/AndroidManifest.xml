@@ -12,21 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySearchFriend" >
         <activity
-            android:name=".DrawerActivity"
+            android:name=".ui.activity.DrawerActivity"
             android:exported="false"
             android:label="@string/title_activity_drawer"
             android:theme="@style/Theme.MySearchFriend.NoActionBar" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.activity.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".OnBoardingActivity"
+            android:name=".ui.activity.OnBoardingActivity"
             android:exported="false" />
         <activity
-            android:name=".ActivityLoginFireStore"
+            android:name=".ui.activity.ActivityLoginFireStore"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.activity.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" >
             <intent-filter>

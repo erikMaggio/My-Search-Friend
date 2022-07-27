@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/loginFireStoreFragment"
-        android:name="com.example.mysearchfriend.LoginFireStoreFragment"
+        android:name="com.example.mysearchfriend.ui.fragment.LoginFireStoreFragment"
         android:label="fragment_login_fire_store"
         tools:layout="@layout/fragment_login_fire_store" />
 </navigation>
