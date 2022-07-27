@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">My Search Friend</string>
+    <string name="menu_home">menu home</string>
 
     <!-- TODO: string in login -->
     <string name="login_tv_alert_Technical">If your account was not associated with the system, contact <p>TECHNICAL SUPPORT</p></string>
@@ -9,7 +10,7 @@
 
     <!-- TODO: string in loginFS -->
     <string name="loginFS_et_email">Email Address</string>
-    <string name="loginFS_et_password">password</string>
+    <string name="loginFS_et_password">Password</string>
     <string name="title_activity_drawer">DrawerActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -18,10 +19,17 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: string in signUpFS -->
+    <string name="signUpFS_et_full_name">Full Name</string>
+    <string name="signUp_bt_Create">Create</string>
+    <string name="register_tv_congratulations">Congratulations!</string>
+    <string name="register_tv_success">You have finished the registration</string>
+    <string name="register_bt_again">Try Again</string>
+    <string name="onboarding_tv_hello">Hello</string>
+    <string name="onboarding_tv_human">Human</string>
+    <string name="onboarding_tv_text">Are you willing to see our Puppies?</string>
+
+    <!-- TODO: string in Onboarding -->
+
 
 </resources>

@@ -9,10 +9,14 @@
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_login_fire_store.xml" value="0.14" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_on_boarding.xml" value="0.20416666666666666" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/alert_dialog_error_login.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/app_bar_drawer.xml" value="0.1" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/content_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_error_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_login_fire_store.xml" value="0.20416666666666666" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_succes_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/nav_header_drawer.xml" value="0.1" />
       </map>
     </option>
