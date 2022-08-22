@@ -2,9 +2,11 @@ package com.example.mysearchfriend.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.mysearchfriend.model.fireStore.UserFireStore
 
 class LoginFireStoreViewModel : ViewModel() {
 
+    val prueba = UserFireStore()
     val liveStateLogin = MutableLiveData<Boolean>()
 
     fun checkState(email: String, password: String) {

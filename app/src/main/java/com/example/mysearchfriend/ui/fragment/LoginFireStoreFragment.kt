@@ -17,6 +17,7 @@ class LoginFireStoreFragment : Fragment() {
     private val loginViewModel by viewModels<LoginFireStoreViewModel>()
     private lateinit var binding: FragmentLoginFireStoreBinding
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -42,7 +43,7 @@ class LoginFireStoreFragment : Fragment() {
         }
         binding.etPassword.doAfterTextChanged {
             loginViewModel.checkState(
-                binding.etPassword.text.toString(), it.toString()
+                binding.etUser.text.toString(), it.toString()
             )
         }
     }
