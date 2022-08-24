@@ -4,89 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/image_login"
     tools:context=".ui.activity.LoginActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/logo_search_friend"
-        app:layout_constraintBottom_toTopOf="@+id/gl_60"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ContentDescription" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/gl_60"
+    <fragment
+        android:id="@+id/my_nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintGuide_percent="0.60" />
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout_editor_absoluteX="-39dp"
+        tools:layout_editor_absoluteY="25dp" />
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/bt_login_google"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:backgroundTint="@color/white"
-        android:drawableStart="@drawable/icon_google"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="@string/login_bt_login_google"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_login_fire_store"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/gl_60" />
 
-    <Button
-        android:id="@+id/bt_login_fire_store"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:backgroundTint="@color/black"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="@string/login_bt_login"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/bt_register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/bt_register"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginEnd="48dp"
-        android:layout_marginBottom="52dp"
-        android:backgroundTint="@color/red"
-        android:paddingTop="16dp"
-        android:paddingBottom="16dp"
-        android:text="@string/login_bt_register"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:text="@string/login_tv_alert_Technical"
-        android:textAlignment="center"
-        android:textColor="@color/purplet"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_register" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

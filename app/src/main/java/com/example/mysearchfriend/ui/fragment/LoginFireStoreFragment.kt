@@ -51,7 +51,6 @@ class LoginFireStoreFragment : Fragment() {
     private fun navigationLogin(){
         binding.iconGroup.setOnClickListener {
             startActivity(Intent(context, LoginActivity::class.java))
-            activity?.finish()
         }
     }
 }

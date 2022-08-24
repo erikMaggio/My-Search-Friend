@@ -24,9 +24,6 @@
             android:name=".ui.activity.OnBoardingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.ActivityLoginFireStore"
-            android:exported="false" />
-        <activity
             android:name=".ui.activity.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" >

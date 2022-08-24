@@ -3,38 +3,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/loginFireStoreFragment">
+    app:startDestination="@id/loginFragment">
 
 
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.mysearchfriend.ui.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_loginFireStoreFragment2"
+            app:destination="@id/loginFireStoreFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment2"
+            app:destination="@id/signUpFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFireStoreFragment"
         android:name="com.example.mysearchfriend.ui.fragment.LoginFireStoreFragment"
         android:label="fragment_login_fire_store"
-        tools:layout="@layout/fragment_login_fire_store" >
-        <action
-            android:id="@+id/action_loginFireStoreFragment_to_signUpFragment"
-            app:destination="@id/signUpFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/succesSignUpFragment"
-        android:name="com.example.mysearchfriend.ui.fragment.SuccessSignUpFragment"
-        android:label="fragment_succes_sign_up"
-        tools:layout="@layout/fragment_succes_sign_up" />
-    <fragment
-        android:id="@+id/errorSignUpFragment"
-        android:name="com.example.mysearchfriend.ui.fragment.ErrorSignUpFragment"
-        android:label="fragment_error_sign_up"
-        tools:layout="@layout/fragment_error_sign_up" />
+        tools:layout="@layout/fragment_login_fire_store" />
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.mysearchfriend.ui.fragment.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up" >
         <action
-            android:id="@+id/action_signUpFragment_to_succesSignUpFragment"
-            app:destination="@id/succesSignUpFragment" />
+            android:id="@+id/action_signUpFragment_to_successSignUpFragment"
+            app:destination="@id/successSignUpFragment" />
         <action
             android:id="@+id/action_signUpFragment_to_errorSignUpFragment"
             app:destination="@id/errorSignUpFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/errorSignUpFragment"
+        android:name="com.example.mysearchfriend.ui.fragment.ErrorSignUpFragment"
+        android:label="fragment_error_sign_up"
+        tools:layout="@layout/fragment_error_sign_up" />
+    <fragment
+        android:id="@+id/successSignUpFragment"
+        android:name="com.example.mysearchfriend.ui.fragment.SuccessSignUpFragment"
+        android:label="fragment_succes_sign_up"
+        tools:layout="@layout/fragment_succes_sign_up" />
 </navigation>
