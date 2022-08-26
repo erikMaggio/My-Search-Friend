@@ -7,10 +7,12 @@
     <string name="login_bt_login">Login</string>
     <string name="login_bt_register">Register</string>
     <string name="login_bt_login_google">Login con Google</string>
-
+    <string name="login_bt_invited">Invited</string>
     <!-- TODO: string in loginFS -->
     <string name="loginFS_et_email">Email Address</string>
     <string name="loginFS_et_password">Password</string>
+
+    <!-- TODO: string in drawer_navigation -->
     <string name="title_activity_drawer">DrawerActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -25,13 +27,17 @@
     <string name="register_tv_congratulations">Congratulations!</string>
     <string name="register_tv_success">You have finished the registration</string>
     <string name="register_bt_again">Try Again</string>
+
+    <!-- TODO: string in Onboarding -->
     <string name="onboarding_tv_hello">Hello</string>
     <string name="onboarding_tv_human">Human</string>
     <string name="onboarding_tv_text">Are you willing to see our Puppies?</string>
+
+    <!-- TODO: string in alert dialog -->
+    <string name="alert_dialog_tv_tittle">you are not registered!</string>
+    <string name="alert_dialog_tv_register">¿Do you want to register?</string>
+    <string name="alert_dialog_bt_retry">Retry</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
-    <!-- TODO: string in Onboarding -->
-
 
 </resources>

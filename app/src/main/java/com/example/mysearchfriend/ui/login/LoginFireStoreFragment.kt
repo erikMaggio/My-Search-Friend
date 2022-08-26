@@ -1,4 +1,4 @@
-package com.example.mysearchfriend.ui.fragment
+package com.example.mysearchfriend.ui.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,13 +8,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.viewModels
-import com.example.mysearchfriend.ui.activity.LoginActivity
 import com.example.mysearchfriend.databinding.FragmentLoginFireStoreBinding
-import com.example.mysearchfriend.viewModel.LoginFireStoreViewModel
+import com.example.mysearchfriend.viewModel.UserViewModel
 
 class LoginFireStoreFragment : Fragment() {
 
-    private val loginViewModel by viewModels<LoginFireStoreViewModel>()
+    private val loginViewModel by viewModels<UserViewModel>()
     private lateinit var binding: FragmentLoginFireStoreBinding
 
 
@@ -38,12 +37,12 @@ class LoginFireStoreFragment : Fragment() {
 
     private fun actions() {
         binding.etUser.doAfterTextChanged {
-            loginViewModel.checkState(
+            loginViewModel.checkStateLogin(
                 it.toString(), binding.etPassword.text.toString()
             )
         }
         binding.etPassword.doAfterTextChanged {
-            loginViewModel.checkState(
+            loginViewModel.checkStateLogin(
                 binding.etUser.text.toString(), it.toString()
             )
         }

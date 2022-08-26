@@ -1,11 +1,10 @@
-package com.example.mysearchfriend.ui.activity
+package com.example.mysearchfriend.ui.onboarding
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.mysearchfriend.R
 import com.example.mysearchfriend.databinding.ActivityOnBoardingBinding
-import com.example.mysearchfriend.ui.fragment.HomeFragment
+import com.example.mysearchfriend.ui.home.DrawerActivity
 
 class OnBoardingActivity : AppCompatActivity() {
 
@@ -20,7 +19,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
     private fun actions() {
         binding.imageView2.setOnClickListener {
-            startActivity(Intent(this,DrawerActivity::class.java))
+            startActivity(Intent(this, DrawerActivity::class.java))
         }
     }
 }

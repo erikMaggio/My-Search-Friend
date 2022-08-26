@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.LoginFireStoreFragment">
+    tools:context=".ui.login.LoginFireStoreFragment">
 
     <ImageView
         android:id="@+id/icon_group"
@@ -53,7 +53,6 @@
         android:hint="@string/loginFS_et_password"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_user" />
 
@@ -63,7 +62,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/state_button"
         android:text="@string/login_bt_login"
-        android:enabled="true"
+        android:enabled="false"
         android:textColor="@color/white"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
@@ -71,5 +70,15 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <include
+        layout="@layout/action_bar_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_login_fire_store" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

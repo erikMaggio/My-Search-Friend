@@ -1,4 +1,4 @@
-package com.example.mysearchfriend.ui.activity
+package com.example.mysearchfriend.ui.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

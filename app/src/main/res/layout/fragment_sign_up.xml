@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragment.SignUpFragment">
+    tools:context=".ui.login.SignUpFragment">
 
     <ImageView
         android:id="@+id/icon_group"
@@ -38,13 +38,13 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:hint="@string/signUpFS_et_full_name"
-        android:inputType="textPassword"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_register" />
 
     <EditText
-        android:id="@+id/et_user"
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -67,18 +67,19 @@
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_user" />
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
 
-    <Button
-        android:id="@+id/bt_login_fire_store"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_create"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:backgroundTint="@color/red"
-        android:enabled="true"
+        android:background="@drawable/state_button"
+        android:enabled="false"
         android:text="@string/signUp_bt_Create"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_password" />

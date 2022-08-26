@@ -13,18 +13,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MySearchFriend" >
         <activity
-            android:name=".ui.activity.DrawerActivity"
+            android:name=".ui.home.DrawerActivity"
             android:exported="false"
             android:label="@string/title_activity_drawer"
             android:theme="@style/Theme.MySearchFriend.NoActionBar" />
         <activity
-            android:name=".ui.activity.LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.OnBoardingActivity"
+            android:name=".ui.onboarding.OnBoardingActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activity.SplashActivity"
+            android:name=".ui.login.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme" >
             <intent-filter>

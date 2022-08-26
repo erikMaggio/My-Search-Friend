@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.mysearchfriend.ui.fragment.LoginFragment"
+        android:name="com.example.mysearchfriend.ui.login.LoginFragment"
         android:label="fragment_login"
         tools:layout="@layout/fragment_login">
         <action
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFireStoreFragment"
-        android:name="com.example.mysearchfriend.ui.fragment.LoginFireStoreFragment"
+        android:name="com.example.mysearchfriend.ui.login.LoginFireStoreFragment"
         android:label="fragment_login_fire_store"
         tools:layout="@layout/fragment_login_fire_store">
         <action
@@ -29,24 +29,16 @@
     </fragment>
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.mysearchfriend.ui.fragment.SignUpFragment"
+        android:name="com.example.mysearchfriend.ui.login.SignUpFragment"
         android:label="fragment_sign_up"
         tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@+id/action_signUpFragment_to_successSignUpFragment"
             app:destination="@id/successSignUpFragment" />
-        <action
-            android:id="@+id/action_signUpFragment_to_errorSignUpFragment"
-            app:destination="@id/errorSignUpFragment" />
     </fragment>
     <fragment
-        android:id="@+id/errorSignUpFragment"
-        android:name="com.example.mysearchfriend.ui.fragment.ErrorSignUpFragment"
-        android:label="fragment_error_sign_up"
-        tools:layout="@layout/fragment_error_sign_up" />
-    <fragment
         android:id="@+id/successSignUpFragment"
-        android:name="com.example.mysearchfriend.ui.fragment.SuccessSignUpFragment"
+        android:name="com.example.mysearchfriend.ui.login.SuccessSignUpFragment"
         android:label="fragment_succes_sign_up"
         tools:layout="@layout/fragment_succes_sign_up" />
 </navigation>

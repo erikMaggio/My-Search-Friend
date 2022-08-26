@@ -3,11 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/by_radius_bg_alert.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/by_radius_black.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/by_radius_orange.xml" value="0.1495" />
         <entry key="..\:/MySearchFriend/app/src/main/res/drawable/by_radius_red.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/cieclet_orange.xml" value="0.1495" />
         <entry key="..\:/MySearchFriend/app/src/main/res/drawable/circle_style.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/circlet_black.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1495" />
         <entry key="..\:/MySearchFriend/app/src/main/res/drawable/icon_google.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/radius_red_opaque.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/side_nav_bar.xml" value="0.1495" />
         <entry key="..\:/MySearchFriend/app/src/main/res/drawable/splash_drawable.xml" value="0.1505" />
         <entry key="..\:/MySearchFriend/app/src/main/res/drawable/state_button.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/action_bar_alert.xml" value="0.203125" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_drawer.xml" value="0.11548913043478261" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_login_fire_store.xml" value="0.14" />
@@ -15,13 +24,17 @@
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_on_boarding.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/alert_dialog_error_login.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/app_bar_drawer.xml" value="0.1" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/by_radius_bg_alert.xml" value="0.203125" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/content_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_error_alert_home.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_error_sign_up.xml" value="0.20416666666666666" />
-        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_login.xml" value="0.33" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_login.xml" value="0.22" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_login_fire_store.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_succes_sign_up.xml" value="0.20416666666666666" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/item_dogs.xml" value="0.203125" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/loading.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/nav_header_drawer.xml" value="0.22" />
         <entry key="..\:/MySearchFriend/app/src/main/res/menu/activity_main_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/menu/drawer.xml" value="0.20416666666666666" />

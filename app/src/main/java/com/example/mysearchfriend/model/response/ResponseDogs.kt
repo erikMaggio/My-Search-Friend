@@ -2,8 +2,8 @@ package com.example.mysearchfriend.model.response
 
 import com.google.gson.annotations.SerializedName
 
-data class ResponseDogRandom(
-    @SerializedName("message") val image: String,
+data class ResponseDogs(
+    @SerializedName("message") val image: List<String>,
     @SerializedName("status") val status: String
 )
 

@@ -10,5 +10,7 @@
     <color name= "red">#C20913</color>
     <color name="purplet">#3F0CAC</color>
     <color name="orange">#E97F01</color>
+    <color name="red_opaque">#962E2E</color>
+    <color name="gray">#D5D5D5</color>
 
 </resources>

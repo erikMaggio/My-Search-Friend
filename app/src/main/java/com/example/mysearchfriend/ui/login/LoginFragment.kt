@@ -1,4 +1,4 @@
-package com.example.mysearchfriend.ui.fragment
+package com.example.mysearchfriend.ui.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,8 +13,7 @@ import com.example.mysearchfriend.AppMySearchFriend.Companion.preferences
 import com.example.mysearchfriend.R
 import com.example.mysearchfriend.databinding.FragmentLoginBinding
 import com.example.mysearchfriend.model.fireStore.UserFireStore
-import com.example.mysearchfriend.ui.activity.OnBoardingActivity
-import com.example.mysearchfriend.utils.Globals
+import com.example.mysearchfriend.ui.onboarding.OnBoardingActivity
 import com.example.mysearchfriend.utils.Globals.EMAIL
 import com.example.mysearchfriend.utils.Globals.NAME
 import com.google.android.gms.auth.api.signin.GoogleSignIn

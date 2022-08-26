@@ -1,6 +1,6 @@
 package com.example.mysearchfriend.model.dataSource
 
-import com.example.mysearchfriend.model.response.ResponseDogRandom
+import com.example.mysearchfriend.model.response.ResponseDogs
 import com.example.mysearchfriend.model.service.ApiServiceDog
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -13,7 +13,7 @@ class DogDataSource {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-        suspend fun getDogsRandom(): Response<ResponseDogRandom> {
+        suspend fun getDogsRandom(): Response<ResponseDogs> {
         return retrofit.create(ApiServiceDog::class.java).getDogsRandom()
     }
 }
