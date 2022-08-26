@@ -7,6 +7,4 @@ interface UserFireStoreService {
 
     fun addUser(email: String, fullName: String, password: String)
 
-
-    fun getUser(email: String): MutableLiveData<ResponseUser>
 }

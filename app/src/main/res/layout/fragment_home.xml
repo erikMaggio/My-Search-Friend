@@ -10,6 +10,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/circle_style"
         android:text="hola"
         tools:layout_editor_absoluteX="108dp"
         tools:layout_editor_absoluteY="144dp" />

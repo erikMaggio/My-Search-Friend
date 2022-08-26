@@ -1,47 +1,33 @@
 package com.example.mysearchfriend.model.fireStore
 
-import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.example.mysearchfriend.model.response.ResponseUser
+import com.example.mysearchfriend.model.response.State
+import com.example.mysearchfriend.model.response.User
 import com.google.firebase.firestore.FirebaseFirestore
 
-class UserFireStore :UserFireStoreService{
+class UserFireStore : UserFireStoreService {
+
     private val fireStore = FirebaseFirestore.getInstance()
     private val liveUser = MutableLiveData<ResponseUser>()
 
+    override fun addUser(email: String, fullName: String, password: String) {
 
-     override fun addUser(email: String, fullName: String, password: String) {
+        //control de estado aca
+
+
         fireStore.collection("users").document(email).set(
             mapOf(
-                email to "email",
-                fullName to "fullName",
-                password to "password"
+                "email" to email,
+                "fullName" to fullName,
+                "password" to password
             )
-        )
+        ).addOnSuccessListener {
+            liveUser.postValue(ResponseUser(User(email, password, fullName), State.SUCCESS))
+        }
     }
 
-   override fun getUser(email: String): MutableLiveData<ResponseUser> {
-        fireStore.collection("users").document(email).get().addOnSuccessListener {
-            if (!it.data.isNullOrEmpty()) {
-                liveUser.postValue(
-                    ResponseUser(
-                        it.get(email).toString(),
-                        it.get("password").toString(),
-                        it.get("fullName").toString()
-                    )
-                )
-            } else {
-                liveUser.postValue(
-                    ResponseUser(
-                        it.get("").toString(),
-                        it.get("").toString(),
-                        it.get("").toString()
-                    )
-                )
-            }
-        }.addOnFailureListener{
-            Log.d("app","errors")
-        }
+    fun getStatus(): MutableLiveData<ResponseUser> {
         return liveUser
     }
 }

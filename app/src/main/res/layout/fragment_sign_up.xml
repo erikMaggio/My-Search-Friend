@@ -77,7 +77,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/red"
-        android:enabled="false"
+        android:enabled="true"
         android:text="@string/signUp_bt_Create"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"

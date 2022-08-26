@@ -6,10 +6,8 @@
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/logo_search_friend" />
-        <bitmap
-            android:gravity="bottom"
-            android:src="@drawable/logo_splash" />
+            android:src="@drawable/splash" />
+
     </item>
 
 

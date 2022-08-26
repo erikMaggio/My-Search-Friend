@@ -15,6 +15,8 @@ import com.example.mysearchfriend.databinding.FragmentLoginBinding
 import com.example.mysearchfriend.model.fireStore.UserFireStore
 import com.example.mysearchfriend.ui.activity.OnBoardingActivity
 import com.example.mysearchfriend.utils.Globals
+import com.example.mysearchfriend.utils.Globals.EMAIL
+import com.example.mysearchfriend.utils.Globals.NAME
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
@@ -65,7 +67,6 @@ class LoginFragment : Fragment() {
             .build()
 
         val googleSignInClient = GoogleSignIn.getClient(requireContext(), gso)
-        googleSignInClient.signOut()
         startActivityForResult(googleSignInClient.signInIntent, GOOGLE_SIGN)
     }
 
@@ -85,11 +86,11 @@ class LoginFragment : Fragment() {
                                 Log.d("success", account.email.toString())
 
                             preferences.saveUserEmail(account.email.toString())
-                            Globals.EMAIL = account.email.toString()
-                            Globals.NAME = account.givenName.toString()
+                            EMAIL = account.email.toString()
+                            NAME = account.givenName.toString()
 
                             //loginFireStore(preferences.getUserEmail())
-                            startActivity(Intent(context,OnBoardingActivity::class.java))
+                            startActivity(Intent(context, OnBoardingActivity::class.java))
                         }
 
                 } else {
@@ -102,7 +103,7 @@ class LoginFragment : Fragment() {
             }
         }
     }
-
+}
 //    private fun loginFireStore(email: String) {
 //        prueba.getUser(email).observe(this) {
 //            if (it.fullName != "empty") {
@@ -116,6 +117,6 @@ class LoginFragment : Fragment() {
 //        }
 //    }
 
-}
+
 
 

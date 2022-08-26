@@ -24,18 +24,19 @@ class LoginFireStoreFragment : Fragment() {
     ): View {
         binding = FragmentLoginFireStoreBinding.inflate(inflater, container, false)
 
-        checkState()
-        navigationLogin()
+       actions()
+        observers()
 
         return binding.root
     }
 
-    private fun checkState() {
-
+    private fun observers(){
         loginViewModel.liveStateLogin.observe(viewLifecycleOwner) {
             binding.btLoginFireStore.isEnabled = it
         }
+    }
 
+    private fun actions() {
         binding.etUser.doAfterTextChanged {
             loginViewModel.checkState(
                 it.toString(), binding.etPassword.text.toString()
@@ -46,11 +47,12 @@ class LoginFireStoreFragment : Fragment() {
                 binding.etUser.text.toString(), it.toString()
             )
         }
-    }
+        binding.btLoginFireStore.setOnClickListener {
 
-    private fun navigationLogin(){
+        }
         binding.iconGroup.setOnClickListener {
             startActivity(Intent(context, LoginActivity::class.java))
         }
     }
+
 }

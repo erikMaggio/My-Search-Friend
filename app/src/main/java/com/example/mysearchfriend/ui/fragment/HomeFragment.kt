@@ -4,16 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
-import androidx.lifecycle.ViewModelProvider
+import androidx.fragment.app.activityViewModels
 import com.example.mysearchfriend.databinding.FragmentHomeBinding
 import com.example.mysearchfriend.viewModel.DogRandomViewModel
 
 class HomeFragment : Fragment() {
 
-    private val dogViewModel by viewModels<DogRandomViewModel>()
+    private val dogViewModel by activityViewModels<DogRandomViewModel>()
     private lateinit var binding: FragmentHomeBinding
 
     override fun onCreateView(
@@ -24,7 +22,7 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         actions()
-        observers()
+       // observers()
         calls()
 
         return binding.root

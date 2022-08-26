@@ -3,7 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/by_radius_red.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/circle_style.xml" value="0.1495" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/icon_google.xml" value="0.1495" />
         <entry key="..\:/MySearchFriend/app/src/main/res/drawable/splash_drawable.xml" value="0.1505" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/drawable/state_button.xml" value="0.1495" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_drawer.xml" value="0.11548913043478261" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_login.xml" value="0.18" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_login_fire_store.xml" value="0.14" />
@@ -14,7 +18,7 @@
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/content_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_error_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
-        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_login.xml" value="0.11548913043478261" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_login.xml" value="0.33" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_login_fire_store.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_sign_up.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_succes_sign_up.xml" value="0.20416666666666666" />
