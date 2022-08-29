@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">My Search Friend</string>
-    <string name="menu_home">menu home</string>
 
     <!-- TODO: string in login -->
     <string name="login_tv_alert_Technical">If your account was not associated with the system, contact <p>TECHNICAL SUPPORT</p></string>
@@ -20,6 +19,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="nav_tyq">Term And Conditions</string>
 
     <!-- TODO: string in signUpFS -->
     <string name="signUpFS_et_full_name">Full Name</string>
@@ -37,7 +37,20 @@
     <string name="alert_dialog_tv_tittle">you are not registered!</string>
     <string name="alert_dialog_tv_register">¿Do you want to register?</string>
     <string name="alert_dialog_bt_retry">Retry</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <!-- TODO: string fragment home -->
+    <string name="nav_home">Home</string>
+    <string name="alert_error_fragment_home">Alert Error</string>
+    <string name="details_fragment">Detail</string>
+    <string name="search_dog">Search Dog</string>
+    <string name="us_fragment">Us</string>
+    <string name="dog_random_fragment">Dog Random</string>
+    <string name="all_dogs_fragment">All Dogs</string>
+    <string name="successful_adoption_fragment">Successful Adoption</string>
+    <string name="tyc_tv_tyc">Lorem ipsum dolor sit amet consectetur adipiscing elit, conubia lacinia curabitur ac ligula gravida, odio nibh arcu fringilla litora congue. Condimentum ligula curabitur urna feugiat dictumst rutrum nullam orci fringilla, natoque hac eleifend nam felis pretium dapibus vehicula commodo maecenas, quis varius tellus semper cubilia dis mus eget. Libero mollis egestas volutpat dictum fusce curae commodo odio, sodales malesuada vehicula pretium cubilia felis ad ridiculus facilisis, bibendum vivamus et aenean sagittis pellentesque sapien.</string>
+
+
+    <string name="tyc_tv_tyc2">Fusce hendrerit suspendisse mi laoreet ridiculus purus curabitur aenean integer, ornare mattis vehicula rhoncus fringilla hac diam mollis, inceptos congue natoque elementum conubia interdum commodo potenti. Sociis facilisi nunc nec morbi ultricies praesent ultrices, aliquam ligula consequat vehicula vitae. Blandit etiam nunc fringilla accumsan turpis curabitur sociis aenean bibendum, sagittis libero lectus dui arcu sem at tortor, fusce varius nulla ligula in cum elementum tempor.</string>
+    <string name="bt_dog_random_previous">Previous</string>
 </resources>

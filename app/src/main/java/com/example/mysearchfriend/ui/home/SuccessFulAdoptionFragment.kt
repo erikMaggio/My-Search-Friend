@@ -6,16 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.mysearchfriend.R
-import com.example.mysearchfriend.databinding.FragmentUsBinding
+import com.example.mysearchfriend.databinding.FragmentSuccessFulAdoptionBinding
 
-class UsFragment : Fragment() {
 
-    private lateinit var binding: FragmentUsBinding
+class SuccessFulAdoptionFragment : Fragment() {
+
+    private lateinit var binding: FragmentSuccessFulAdoptionBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentUsBinding.inflate(inflater, container, false)
-        return binding.root
+         binding = FragmentSuccessFulAdoptionBinding.inflate(inflater,container,false)
+         return binding.root
     }
+
 }

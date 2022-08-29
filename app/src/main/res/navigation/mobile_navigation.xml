@@ -8,98 +8,101 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.mysearchfriend.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/nav_home"
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_nav_home_to_searchDogFragment"
-            app:destination="@id/searchDogFragment" />
+            app:destination="@id/search_dog_fragment" />
         <action
             android:id="@+id/action_nav_home_to_usFragment"
-            app:destination="@id/usFragment" />
+            app:destination="@id/us_fragment" />
         <action
             android:id="@+id/action_nav_home_to_dogRandomFragment"
-            app:destination="@id/dogRandomFragment" />
+            app:destination="@id/dog_random_fragment" />
         <action
             android:id="@+id/action_nav_home_to_allDogsFragment"
-            app:destination="@id/allDogsFragment" />
+            app:destination="@id/all_dog_fragment" />
         <action
             android:id="@+id/action_nav_home_to_allDogsFragment2"
-            app:destination="@id/allDogsFragment" />
+            app:destination="@id/all_dog_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/errorAlertHomeFragment"
+        android:id="@+id/error_alert_home_fragment"
         android:name="com.example.mysearchfriend.ui.home.ErrorAlertHomeFragment"
-        android:label="fragment_error_alert_home"
+        android:label="@string/alert_error_fragment_home"
         tools:layout="@layout/fragment_error_alert_home" />
     <fragment
-        android:id="@+id/detailsFragment"
+        android:id="@+id/details_fragment"
         android:name="com.example.mysearchfriend.ui.home.DetailsFragment"
-        android:label="fragment_details"
+        android:label="@string/details_fragment"
         tools:layout="@layout/fragment_details" >
         <action
             android:id="@+id/action_detailsFragment_to_successFulAdoptionFragment"
-            app:destination="@id/successFulAdoptionFragment" />
+            app:destination="@id/successful_adoption_fragment" />
         <action
             android:id="@+id/action_detailsFragment_to_errorAlertHomeFragment"
-            app:destination="@id/errorAlertHomeFragment" />
+            app:destination="@id/error_alert_home_fragment" />
     </fragment>
     <fragment
-        android:id="@+id/termsAndConditionsFragment"
+        android:id="@+id/nav_terms_and_conditions_fragment"
         android:name="com.example.mysearchfriend.ui.home.TermsAndConditionsFragment"
-        android:label="fragment_terms_and_conditions"
+        android:label="@string/nav_tyq"
         tools:layout="@layout/fragment_terms_and_conditions" />
     <fragment
-        android:id="@+id/searchDogFragment"
+        android:id="@+id/search_dog_fragment"
         android:name="com.example.mysearchfriend.ui.home.SearchDogFragment"
-        android:label="fragment_search_dog"
+        android:label="@string/search_dog"
         tools:layout="@layout/fragment_search_dog" >
         <action
             android:id="@+id/action_searchDogFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@id/details_fragment" />
         <action
             android:id="@+id/action_searchDogFragment_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
     <fragment
-        android:id="@+id/usFragment"
+        android:id="@+id/us_fragment"
         android:name="com.example.mysearchfriend.ui.home.UsFragment"
-        android:label="fragment_us"
+        android:label="@string/us_fragment"
         tools:layout="@layout/fragment_us" >
         <action
             android:id="@+id/action_usFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@id/details_fragment" />
         <action
             android:id="@+id/action_usFragment_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
     <fragment
-        android:id="@+id/dogRandomFragment"
+        android:id="@+id/dog_random_fragment"
         android:name="com.example.mysearchfriend.ui.home.DogRandomFragment"
-        android:label="fragment_dog_random"
+        android:label="@string/dog_random_fragment"
         tools:layout="@layout/fragment_dog_random" >
         <action
             android:id="@+id/action_dogRandomFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@id/details_fragment" />
         <action
             android:id="@+id/action_dogRandomFragment_to_nav_home"
             app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_dog_random_fragment_to_nav_home"
+            app:destination="@id/nav_home" />
     </fragment>
     <fragment
-        android:id="@+id/allDogsFragment"
+        android:id="@+id/all_dog_fragment"
         android:name="com.example.mysearchfriend.ui.home.AllDogsFragment"
-        android:label="fragment_all_dogs"
+        android:label="@string/all_dogs_fragment"
         tools:layout="@layout/fragment_all_dogs" >
         <action
             android:id="@+id/action_allDogsFragment_to_detailsFragment"
-            app:destination="@id/detailsFragment" />
+            app:destination="@id/details_fragment" />
         <action
             android:id="@+id/action_allDogsFragment_to_nav_home"
             app:destination="@id/nav_home" />
     </fragment>
     <fragment
-        android:id="@+id/successFulAdoptionFragment"
-        android:name="com.example.mysearchfriend.ui.home.successFulAdoptionFragment"
-        android:label="fragment_success_ful_adoption"
+        android:id="@+id/successful_adoption_fragment"
+        android:name="com.example.mysearchfriend.ui.home.SuccessFulAdoptionFragment"
+        android:label="@string/successful_adoption_fragment"
         tools:layout="@layout/fragment_success_ful_adoption" />
 
 
