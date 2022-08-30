@@ -56,9 +56,6 @@
         <action
             android:id="@+id/action_searchDogFragment_to_detailsFragment"
             app:destination="@id/details_fragment" />
-        <action
-            android:id="@+id/action_searchDogFragment_to_nav_home"
-            app:destination="@id/nav_home" />
     </fragment>
     <fragment
         android:id="@+id/us_fragment"
@@ -68,9 +65,6 @@
         <action
             android:id="@+id/action_usFragment_to_detailsFragment"
             app:destination="@id/details_fragment" />
-        <action
-            android:id="@+id/action_usFragment_to_nav_home"
-            app:destination="@id/nav_home" />
     </fragment>
     <fragment
         android:id="@+id/dog_random_fragment"
@@ -80,12 +74,6 @@
         <action
             android:id="@+id/action_dogRandomFragment_to_detailsFragment"
             app:destination="@id/details_fragment" />
-        <action
-            android:id="@+id/action_dogRandomFragment_to_nav_home"
-            app:destination="@id/nav_home" />
-        <action
-            android:id="@+id/action_dog_random_fragment_to_nav_home"
-            app:destination="@id/nav_home" />
     </fragment>
     <fragment
         android:id="@+id/all_dog_fragment"
@@ -95,9 +83,6 @@
         <action
             android:id="@+id/action_allDogsFragment_to_detailsFragment"
             app:destination="@id/details_fragment" />
-        <action
-            android:id="@+id/action_allDogsFragment_to_nav_home"
-            app:destination="@id/nav_home" />
     </fragment>
     <fragment
         android:id="@+id/successful_adoption_fragment"

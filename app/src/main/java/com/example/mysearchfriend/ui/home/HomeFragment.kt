@@ -6,7 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.mysearchfriend.R
 import com.example.mysearchfriend.databinding.FragmentHomeBinding
 import com.example.mysearchfriend.model.response.ResponseDogs
 import com.example.mysearchfriend.ui.adapter.DogAdapter
@@ -33,7 +35,18 @@ class HomeFragment : Fragment() {
 
 
     private fun actions() {
-
+        binding.tvAllDogs.setOnClickListener {
+            findNavController().navigate(R.id.all_dog_fragment)
+        }
+        binding.tvDogRandom.setOnClickListener {
+            findNavController().navigate(R.id.dog_random_fragment)
+        }
+        binding.tvSearch.setOnClickListener {
+            findNavController().navigate(R.id.search_dog_fragment)
+        }
+        binding.tvUs.setOnClickListener {
+            findNavController().navigate(R.id.us_fragment)
+        }
     }
 
     private fun observers() {

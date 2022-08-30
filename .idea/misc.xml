@@ -25,9 +25,10 @@
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/activity_on_boarding.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/alert_dialog_error_login.xml" value="0.20416666666666666" />
-        <entry key="..\:/MySearchFriend/app/src/main/res/layout/app_bar_drawer.xml" value="0.1" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/app_bar_drawer.xml" value="0.12" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/by_radius_bg_alert.xml" value="0.203125" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/content_drawer.xml" value="0.20416666666666666" />
+        <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_all_dogs.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_dog_random.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_error_alert_home.xml" value="0.20416666666666666" />
         <entry key="..\:/MySearchFriend/app/src/main/res/layout/fragment_error_sign_up.xml" value="0.20416666666666666" />
