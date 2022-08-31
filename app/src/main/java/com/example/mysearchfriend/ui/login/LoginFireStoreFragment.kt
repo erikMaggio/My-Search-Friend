@@ -6,13 +6,18 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.viewModels
 import com.example.mysearchfriend.databinding.FragmentLoginFireStoreBinding
+import com.example.mysearchfriend.model.fireStore.UserFireStore
+import com.example.mysearchfriend.model.response.State
+import com.example.mysearchfriend.ui.onboarding.OnBoardingActivity
 import com.example.mysearchfriend.viewModel.UserViewModel
 
 class LoginFireStoreFragment : Fragment() {
 
+    val fireStore = UserFireStore()
     private val loginViewModel by viewModels<UserViewModel>()
     private lateinit var binding: FragmentLoginFireStoreBinding
 
@@ -23,13 +28,27 @@ class LoginFireStoreFragment : Fragment() {
     ): View {
         binding = FragmentLoginFireStoreBinding.inflate(inflater, container, false)
 
-       actions()
+        actions()
         observers()
+        calls()
 
         return binding.root
     }
 
-    private fun observers(){
+    fun calls() {
+        loginViewModel.userCheck(
+            binding.etUser.text.toString(),
+            binding.etPassword.text.toString()
+        )
+    }
+
+
+    private fun observers() {
+
+        loginViewModel.getResult().observe(viewLifecycleOwner) {
+            controlState(it.state)
+        }
+
         loginViewModel.liveStateLogin.observe(viewLifecycleOwner) {
             binding.btLoginFireStore.isEnabled = it
         }
@@ -51,6 +70,35 @@ class LoginFireStoreFragment : Fragment() {
         }
         binding.iconGroup.setOnClickListener {
             startActivity(Intent(context, LoginActivity::class.java))
+        }
+    }
+
+    private fun controlState(state: State) {
+        when (state) {
+            State.SUCCESS -> {
+                binding.lyAlertDialog.root.visibility = View.GONE
+                binding.pbLoading.root.visibility = View.GONE
+                startActivity(Intent(context, OnBoardingActivity::class.java))
+            }
+            State.LOADING -> {
+                binding.pbLoading.root.visibility = View.VISIBLE
+                binding.lyAlertDialog.root.visibility = View.GONE
+            }
+            State.NO_REGISTER -> {
+                binding.pbLoading.root.visibility = View.GONE
+                binding.lyAlertDialog.root.visibility = View.VISIBLE
+                //funcion alert dialog
+            }
+            State.EMPTY -> {
+                binding.pbLoading.root.visibility = View.GONE
+                binding.lyAlertDialog.root.visibility = View.GONE
+                Toast.makeText(context, "the field is empty", Toast.LENGTH_SHORT).show()
+            }
+            State.ERROR_PASSWORD -> {
+                binding.pbLoading.root.visibility = View.GONE
+                binding.lyAlertDialog.root.visibility = View.GONE
+                Toast.makeText(context, "your password is incorrect", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

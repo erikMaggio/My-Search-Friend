@@ -1,6 +1,7 @@
 package com.example.mysearchfriend.model.dataSource
 
 import com.example.mysearchfriend.model.response.ResponseDogs
+import com.example.mysearchfriend.model.response.State
 import com.example.mysearchfriend.model.service.ApiServiceDog
 import retrofit2.Response
 import retrofit2.Retrofit
@@ -13,7 +14,18 @@ class DogDataSource {
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-        suspend fun getDogsRandom(): Response<ResponseDogs> {
-        return retrofit.create(ApiServiceDog::class.java).getDogsRandom()
+    private val implementService = retrofit.create(ApiServiceDog::class.java)
+
+
+    suspend fun getDogs(): Dogs {
+        val call = implementService.getDogs()
+        return if(call.isSuccessful){
+            Dogs(implementService.getDogs().body()!!,State.SUCCESS)
+        } else {
+            Dogs(implementService.getDogs().body()!!,State.ERROR)
+        }
+
     }
 }
+
+data class Dogs(val body: ResponseDogs, val status: State)

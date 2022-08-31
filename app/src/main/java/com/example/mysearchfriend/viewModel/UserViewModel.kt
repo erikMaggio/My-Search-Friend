@@ -45,6 +45,10 @@ class UserViewModel : ViewModel() {
         prueba.addUser(email, fullName, password)
     }
 
+    fun userCheck(email: String,password: String) {
+        prueba.getUser(email,password)
+    }
+
     fun getResult(): MutableLiveData<ResponseUser> {
         val data = MutableLiveData<ResponseUser>()
         prueba.getStatus().observeForever {

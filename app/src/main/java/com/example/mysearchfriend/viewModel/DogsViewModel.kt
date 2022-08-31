@@ -2,8 +2,10 @@ package com.example.mysearchfriend.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.mysearchfriend.model.dataSource.Dogs
 import com.example.mysearchfriend.model.repository.DogRepository
 import com.example.mysearchfriend.model.response.ResponseDogs
+import com.example.mysearchfriend.model.response.State
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -11,13 +13,11 @@ import kotlinx.coroutines.launch
 class DogsViewModel : ViewModel() {
 
     private val dogRepository = DogRepository()
-    val dogLiveData = MutableLiveData<ResponseDogs>()
+    val liveDogData = MutableLiveData<Dogs>()
 
-    fun getDogRandomList() {
+    fun getDogs() {
         CoroutineScope(Dispatchers.IO).launch {
-            val call = dogRepository.getDogsRandom()
-            if (call.isSuccessful)
-                dogLiveData.postValue(call.body())
+            liveDogData.postValue(dogRepository.getDogs())
         }
     }
 }

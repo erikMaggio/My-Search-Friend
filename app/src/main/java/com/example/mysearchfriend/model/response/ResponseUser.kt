@@ -6,7 +6,7 @@ data class ResponseUser(
 )
 
 enum class State {
-    SUCCESS, ERROR
+    SUCCESS, ERROR, LOADING, EMPTY, ERROR_PASSWORD, NO_REGISTER
 }
 
 data class User(

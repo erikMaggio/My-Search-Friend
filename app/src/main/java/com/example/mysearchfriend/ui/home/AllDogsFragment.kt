@@ -17,12 +17,12 @@ import com.example.mysearchfriend.viewModel.DogsViewModel
 class AllDogsFragment : Fragment() {
 
     private val dogViewModels by activityViewModels<DogsViewModel>()
-    private lateinit var binding:FragmentAllDogsBinding
+    private lateinit var binding: FragmentAllDogsBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentAllDogsBinding.inflate(inflater,container,false)
+        binding = FragmentAllDogsBinding.inflate(inflater, container, false)
 
         observers()
         calls()
@@ -32,14 +32,14 @@ class AllDogsFragment : Fragment() {
     }
 
     private fun observers() {
-        dogViewModels.dogLiveData.observe(viewLifecycleOwner){
-            initRecyclerView(it.image)
+        dogViewModels.liveDogData.observe(viewLifecycleOwner) {
+            initRecyclerView(it.body.image)
         }
 
     }
 
     private fun calls() {
-        dogViewModels.getDogRandomList()
+        dogViewModels.getDogs()
     }
 
     private fun actions() {

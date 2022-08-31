@@ -13,6 +13,8 @@ import com.example.mysearchfriend.AppMySearchFriend.Companion.preferences
 import com.example.mysearchfriend.R
 import com.example.mysearchfriend.databinding.FragmentLoginBinding
 import com.example.mysearchfriend.model.fireStore.UserFireStore
+import com.example.mysearchfriend.model.response.State
+import com.example.mysearchfriend.ui.home.DrawerActivity
 import com.example.mysearchfriend.ui.onboarding.OnBoardingActivity
 import com.example.mysearchfriend.utils.Globals.EMAIL
 import com.example.mysearchfriend.utils.Globals.NAME
@@ -102,19 +104,17 @@ class LoginFragment : Fragment() {
             }
         }
     }
+    fun controlState(state:State){
+        when (state){
+           State.SUCCESS ->{}
+            State.LOADING ->{}
+            State.ERROR ->{}
+            State.EMPTY ->{}
+            State.ERROR_PASSWORD ->{}
+        }
+    }
 }
-//    private fun loginFireStore(email: String) {
-//        prueba.getUser(email).observe(this) {
-//            if (it.fullName != "empty") {
-//                Globals.OBJECT_USER = it
-//                startActivity(Intent(context, DrawerActivity::class.java))
-//                activity?.finish()
-//            } else {
-//                startActivity(Intent(context, OnBoardingActivity::class.java))
-//                activity?.finish()
-//            }
-//        }
-//    }
+
 
 
 

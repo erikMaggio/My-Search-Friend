@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mysearchfriend.R
 import com.example.mysearchfriend.databinding.FragmentHomeBinding
 import com.example.mysearchfriend.model.response.ResponseDogs
+import com.example.mysearchfriend.model.response.State
 import com.example.mysearchfriend.ui.adapter.DogAdapter
 import com.example.mysearchfriend.viewModel.DogsViewModel
 
@@ -18,6 +19,7 @@ class HomeFragment : Fragment() {
 
     private val dogViewModel by activityViewModels<DogsViewModel>()
     private lateinit var binding: FragmentHomeBinding
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -50,13 +52,16 @@ class HomeFragment : Fragment() {
     }
 
     private fun observers() {
-        dogViewModel.dogLiveData.observe(viewLifecycleOwner) {
-            initRecyclerView(it.image)
+        dogViewModel.liveDogData.observe(viewLifecycleOwner) {
+            initRecyclerView(it.body.image)
+            controlState(it.status)
         }
+
     }
 
     private fun calls() {
-        dogViewModel.getDogRandomList()
+        controlState(State.LOADING)
+        dogViewModel.getDogs()
     }
 
     private fun initRecyclerView(listDogs: List<String>) {
@@ -64,5 +69,19 @@ class HomeFragment : Fragment() {
         binding.recyclerView.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL, false)
         binding.recyclerView.adapter = adapter
+    }
+
+    private fun controlState(state: State) {
+        when (state) {
+            State.SUCCESS -> {
+                binding.recyclerView.visibility = View.VISIBLE
+                binding.pbLoading.root.visibility = View.GONE
+                //layout error in Gone
+            }
+            State.LOADING -> {binding.recyclerView.visibility = View.GONE
+                binding.pbLoading.root.visibility = View.VISIBLE
+            }
+            State.ERROR -> {}
+        }
     }
 }

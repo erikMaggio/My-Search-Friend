@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.example.mysearchfriend.R
 import com.example.mysearchfriend.databinding.FragmentSignUpBinding
 import com.example.mysearchfriend.model.response.State
 import com.example.mysearchfriend.ui.onboarding.OnBoardingActivity
@@ -32,6 +34,7 @@ class SignUpFragment : Fragment() {
     }
 
     private fun call() {
+        controlState(State.LOADING)
         userViewModel.login(
             binding.etEmail.text.toString(),
             binding.etName.text.toString(),
@@ -68,23 +71,26 @@ class SignUpFragment : Fragment() {
 
     private fun observers() {
         userViewModel.getResult().observe(viewLifecycleOwner) {
-            // validar el campo it.state
-            case(it.state)
+            controlState(it.state)
         }
-
         userViewModel.liveStateRegister.observe(viewLifecycleOwner) {
             binding.btCreate.isEnabled = it
         }
     }
 
-    private fun case(state: State) {
+    private fun controlState(state: State) {
         when (state) {
             State.SUCCESS -> {
-                startActivity(Intent(context, OnBoardingActivity::class.java))
-            } // enviar al onboarding
+                binding.pbLoading.root.visibility = View.GONE
+                findNavController().navigate(R.id.action_signUpFragment_to_successSignUpFragment)
+            }
             State.ERROR -> {
-                Toast.makeText(context, "error", Toast.LENGTH_SHORT).show()
-            }// mensaje de no Registrado
+                binding.pbLoading.root.visibility = View.GONE
+                Toast.makeText(context, "usuario registrado", Toast.LENGTH_SHORT).show()
+            }
+            State.LOADING -> {
+                binding.pbLoading.root.visibility = View.VISIBLE
+            }
         }
     }
 }
